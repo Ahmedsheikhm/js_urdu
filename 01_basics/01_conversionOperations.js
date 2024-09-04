@@ -1,4 +1,4 @@
-let score = "33"
+/*let score = "33"
 //let score ="33aa"// even though this is not a correct number,
 //it will be converted into a number 
 //when in the back end we are quite sure that the variable score
@@ -13,4 +13,16 @@ console.log(valueInNumber)
 let vv = Number("33");//converted to number 
 console.log(typeof vv) 
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+//let booleanIsLoggedIn = Boolean(booleanIsLoggedIn)
+//******************************Operations***********************
+let value  =  3
+let negValue  =-value
+console.log(negValue)
+console.log(2**2)//2 reaised to the pover 2
+//revision
+console.log(2%3) // remainder mod function
+*/
+let str1 = "hello"
+let str2 = "bye"
+let str3 = str1+str2
+console.log(str3);
