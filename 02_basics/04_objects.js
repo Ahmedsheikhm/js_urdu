@@ -46,10 +46,44 @@ const users=[
     }
 ]
 users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));//to get an array of keys for an object, later we can loop through these if needed
-console.log(Object.values(tinderUser));//same for values
-console.log(Object.entries(tinderUser));//arrays within arrays,with keys and value pairs
+// console.log(tinderUser);
+//console.log(Object.keys(tinderUser));//to get an array of keys for an object, later we can loop through these if needed
+//console.log(Object.values(tinderUser));//same for values
+// console.log(Object.entries(tinderUser));//arrays within arrays,with keys and value pairs
  
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+//desturucturing of objects, to get values
+
+const course ={
+    coursenaem:"js in urdu",
+    price:"999",
+    courseinstructor:"hitesh"
+}
+//course.courseinstructor
+
+const {courseinstructor}= course//used to help directly 
+//const {courseinstructor:instructor}= course//helps change name tosomething easier
+//access cousreinstructor from courses
+
+console.log(courseinstructor);
+//for react
+//const navbar = ({company})=>{}
+//navbar(COMPANY="aHMED")
+
+//array can also be destructured
+//api// to put your work on others
+
+//json
+// {
+//     "name":"Ahmed",
+//     "coursename":"js  in urdu",
+//     "price":"free"
+// }
+
+//some api in array format
+[
+    {},
+    {},
+    {},
+]
