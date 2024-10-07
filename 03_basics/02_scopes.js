@@ -43,7 +43,7 @@ console.log(addtwo(5))// error will be given as cannot be run befor the function
 //all depends on the way the function is declared
 const addtwo = function(num){
     return num+2
-
+addtwo(5)
 }
 
 
