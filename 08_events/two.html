@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<Script>
+    function sayAhmed(){
+        console.log("Hi, Ahmed")
+    }
+    setTimeout(sayAhmed,5000)
+    //set interval is a function on its own where the code it runs needs to be whithin it
+    //setTime out receives the function it nedds to run and the interval to run that function
+
+    // now the same to be done along with the innerHTML
+    const changeText = function(){
+        document.querySelector('h1' ).innerHTML = "Best JS series"
+    }
+    const changeMe = setTimeout(changeText,5000)//this is working
+    //now what if the function that needs to be run in a set intrerval does not run
+    //what if we need to stop that function than
+
+    //cleartimeout
+    //clearTimeout() needs a refrence
+    //tets put the clearTimeout at an event
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("changeText stopped")
+    })
+    
+
+</Script>
+</html>
